@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>In App template</h1>
+<form action="" method="POST">
+    {% csrf_token %}
+    <h1>Do you Want To delete The Post."{{ object.header }}"</h1>
+    <p><input type="submit" VALUE="Yes"><a href="../">Cancel</a></p>
+
+</form>
+{% endblock %}

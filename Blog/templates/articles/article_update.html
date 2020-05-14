@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <span class="pt-5"></span>
+<div class="container">
+    <h4>Update The Blog Content.</h4></br>
+    <div class="d-flex justify-content-center">
+        <p><form action='.' method='POST'>{% csrf_token %}
+            {{ form.as_p }}
+            <input type='submit' value='Save' class="btn btn-block btn-info"/>
+        </form></p>
+    </div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+<div class="container">
+     <span class="mt-10"></span>
+{% for instance in object_list %}
+     <ul class="list-group mt-1">
+     <li class="list-group-item border border-primary"><p>{{ instance.id }} - <a class="btn btn-light" href='/blog/{{ instance.id }}/'>{{ instance.header }}</a></p>
+<p>{{ instance.content }}</p></li>
+     </ul>
+{% endfor %}
+</div>
+
+
+{% endblock %}
