@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>Rafiqul's Paradise</title>
+
+</head>
+<body style="background-image: linear-gradient(90deg, white, #fffdd0, #C9FFE5);">
+ <nav class="navbar navbar-expand-md bg-dark navbar-warning navbar-dark">
+     <div class="clearfix">
+                     <span class="float-left" style="font-family: Castellar; color: white;"><a class="navbar-brand" href="/">Rafiqul's Paradise</a></span>
+             <span class="float-right">
+                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="nav navbar-nav justify-content-end">
+                          <li class="nav-item">
+                            <a class="nav-link" href="/products/">Product list</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="/about/">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="/products/create/">Create Products</a>
+                          </li>
+                        </ul>
+                     </div>
+             </span>
+       </div>
+</nav>
+
+
+ <!-- Nav ends here  -->
+{% block content %}
+
+    {% endblock %}
+
+
+</body>
+</html>

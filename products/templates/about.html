@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+<span class="mt-5"></span>
+<div class="row pt-5">
+    <div class="col-md-3 mft-5">
+        <h2>Contact us</h2>
+        <p>Don't Hesitate to Call Us. <br>
+        Phone: 01873827353 <br>
+        Email: test@test.com
+        </p>
+    </div>
+    <div class="col-md-9 mt-5">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi debitis dolore enim eveniet inventore minus odit quo similique sint. Accusantium commodi debitis dicta doloribus eligendi eos, et expedita illo illum impedit incidunt magni, maiores nihil nisi quos? Amet asperiores eligendi enim eum in nemo nesciunt nihil obcaecati odio quo! Porro.</p>
+    <ul>
+        {% for abc in my_list %}
+        {% if abc == 123 %}
+        <li>{{ forloop.counter }} - {{ abc|add:22 }}</li>
+        {% elif abc == 'abc' %}
+        <li>This is not the thing you are looking for.</li>
+        {% else %}
+        <li>{{ forloop.counter }} - {{ abc  }}</li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+    </div>
+
+</div>
+{% endblock %}

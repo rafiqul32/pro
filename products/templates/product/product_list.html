@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            {% for instance in object_list %}
+            <div class="card bg-info">
+
+              <div class="card-header"><a href="/product/{{ instance.get_absolute_url }}/">{{ instance.name }}</a></div>
+              <div class="card-body">Price: {{ instance.price }}</div>
+              <div class="card-footer">Stock: {{ instance.stock }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}
